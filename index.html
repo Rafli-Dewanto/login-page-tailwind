@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section
+      class="bg-gray-50 min-h-screen flex items-center justify-center md:flex-row"
+    >
+      <!-- Login Container -->
+      <div
+        class="bg-gray-100 flex rounded-2xl shadow-lg max-w-4xl p-5 items-center"
+      >
+        <!-- Form - Left Section -->
+        <div class="md:w-1/2 px-16">
+          <h2 class="font-bold text-2xl text-pink-500">Login</h2>
+          <p class="text-sm mt-4 text-pink-500">
+            If you are already a member easily login
+          </p>
+          <form action="" class="flex flex-col gap-4">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="p-2 mt-8 rounded-xl border outline-blue-500"
+            />
+            <div class="relative">
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                class="p-2 rounded-xl border outline-blue-500 w-full"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="gray"
+                class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                />
+                <path
+                  d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                />
+              </svg>
+            </div>
+            <button
+              class="bg-pink-400 rounded-xl text-white py-2 hover:bg-pink-500 duration-300"
+            >
+              Login
+            </button>
+          </form>
+          <!-- Divider -->
+          <div class="grid grid-cols-3 mt-10 items-center text-gray-500">
+            <hr class="border-gray-400" />
+            <p class="text-center text-sm">or</p>
+            <hr class="border-gray-400" />
+          </div>
+          <!-- Google -->
+          <button
+            class="bg-white border flex text-sm justify-center items-center text-black rounded-xl w-full py-2 mt-5 hover:bg-[#f5f5f5] duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+              width="25px"
+              height="25px"
+              class="mr-3"
+            >
+              <path
+                fill="#FFC107"
+                d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+              />
+              <path
+                fill="#FF3D00"
+                d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+              />
+              <path
+                fill="#4CAF50"
+                d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+              />
+              <path
+                fill="#1976D2"
+                d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+              /></svg
+            >Login With Google
+          </button>
+          <!-- Apple -->
+          <button
+            class="bg-white border flex text-sm justify-center items-center text-black rounded-xl w-full py-2 mt-5 hover:bg-[#f5f5f5] duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="currentColor"
+              class="bi bi-apple mr-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+              />
+              <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+              />
+            </svg>
+            Login With Apple ID
+          </button>
+          <!-- Facebook -->
+          <button
+            class="bg-white border flex text-sm justify-center items-center text-black rounded-xl w-full py-2 mt-5 hover:bg-[#f5f5f5] duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="#1f5dc1"
+              class="bi bi-facebook mr-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
+            </svg>
+            Login With Facebook
+          </button>
+          <p class="mt-5 text-xs border-b py-6">Forgot Your Password?</p>
+          <!-- redirect to register -->
+          <div class="text-xs mt-4">
+            <p class="">
+              Don't have an account?
+              <!-- #002D74 -->
+              <a href="#" class="text-pink-400 hover:underline">Sign Up</a>
+            </p>
+          </div>
+        </div>
+        <!-- Image - Right Section -->
+        <div class="w-1/2 hidden md:block">
+          <img
+            src="assets/mohammad-amin-tU23dGzQ0xY-unsplash.jpg"
+            class="sm:block rounded-2xl"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
